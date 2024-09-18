@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "listas.h"
 #include "tipo_elemento.h"
+#include "ejercicio3.h"
 
 
 bool determinarMultiplo(Lista l1, Lista l2) {
