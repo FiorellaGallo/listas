@@ -34,8 +34,9 @@ bool comparar(Lista* L2, Lista* L1){
 
 //COMPLEJIDAD ALGORITMICA
 
-/*La función "comparar" presenta una complejidad algorítmica  de orden lineal, ya que
-para buscar todos los elementos de L2 en L1 requiero recorrer ambas listas. Elrecorrido
-se realiza con el  while en L2. Pero a su vez la funcion l_buscar por cada elemento de
-L2 realiza una búsqueda en la L1. Por lo tanto O(n*m).*/
+/*La función "comparar" presenta una complejidad algorítmica de orden cuadratica, ya que para buscar todos
+los elementos de L2 en L1 requiero recorrer ambas listas. El recorrido de L2 se realiza con el while, y por 
+cada elemento de L2, la función l_buscar realiza una búsqueda lineal en L1, lo que introduce una complejidad 
+de O(n) por cada elemento de L2. Como resultado, la complejidad total es O(n * m), donde n es el tamaño de L1 
+y m el tamaño de L2..*/
 
