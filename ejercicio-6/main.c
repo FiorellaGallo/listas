@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "tipo_elemento.h"
-#include "listas.h"
+#include "../TADs/tipo_elemento.h"
+#include "../TADs/listas.h"
 #include "ejercicio_6.h"
 
 
