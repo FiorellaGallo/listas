@@ -8,13 +8,20 @@ void cargar_listas(Lista* L){
     int num;
     char c;
 
-    while(scanf("%d",&num) == 1){
+    while(1){
+        if(scanf("%d",&num) == 1){
             TipoElemento X = te_crear(num);
             l_agregar(L, X);
-
+        }else{
+            scanf("%c",&c);
+            if(c == '*'){
+                break;
+            }else{
+                printf("Entrada no válida.Solo se permiten números.Intente nuevamente:\n");
+                while ((c = getchar()) != '\n' && c != EOF);
+            }
+        }
     }
-    printf("\nSOLO SE CARGAN A LAS LISTAS DATOS NÚMERICOS\n\n");
-    while ((c = getchar()) != '\n' && c != EOF);
 }
 
 bool comparar(Lista* L2, Lista* L1){
@@ -34,7 +41,7 @@ bool comparar(Lista* L2, Lista* L1){
 
 //COMPLEJIDAD ALGORITMICA
 
-/*La función "comparar" presenta una complejidad algorítmica  de orden lineal, ya que
+/*La función "comparar" presenta una complejidad algorítmica  de orden cuadrática, ya que
 para buscar todos los elementos de L2 en L1 requiero recorrer ambas listas. Elrecorrido
 se realiza con el  while en L2. Pero a su vez la funcion l_buscar por cada elemento de
 L2 realiza una búsqueda en la L1. Por lo tanto O(n*m).*/
