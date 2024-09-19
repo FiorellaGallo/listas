@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "listas.h"
-#include "tipo_elemento.h"
+#include "../TADs/listas.h"
+#include "../TADs/tipo_elemento.h"
 #include <time.h>
 
 void cargar_listas(Lista* L){
@@ -141,7 +141,7 @@ Lista recursividad (Iterador ite,int num, Lista L3){
 
     if(!hay_siguiente(ite)){
         if(l_es_vacia(L3)){
-            printf("No hay ningún múltiplo de %d en la lista",num);
+            printf("No hay ningún múltiplo de %d en la lista\n",num);
         }else{
           l_mostrar(L3);
 

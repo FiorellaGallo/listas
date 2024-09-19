@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "tipo_elemento.h"
-#include "listas.h"
+#include "../TADs/tipo_elemento.h"
+#include "../TADs/listas.h"
 #include "ejercicio_2.h"
 
 int validaciones(){
