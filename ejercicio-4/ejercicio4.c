@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "listas.h"
-#include "tipo_elemento.h"
+#include "../TADs/listas.h"
+#include "../TADs/tipo_elemento.h"
 #include "ejercicio4.h"
 
 void comparacion(Lista Lista1, Lista Lista2){
